@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import weatherReducer from '../features/weather/weatherSlice'; 
 
 export const store = configureStore({
   reducer: {
+    weather: weatherReducer,  
   },
 });
 
